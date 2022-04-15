@@ -263,23 +263,48 @@ a:hover {
 
 /* ---------- Nosotros ---------- */
 
+/* Grids */
 #nosotros {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     margin: 2% 10%;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     line-height: 1.5em;
+
+    grid-template-areas: 
+    "nos-h2 nos-img"
+    "p1 nos-img"
+    "p2 nos-img"
+    "p3 nos-img"
+    ;
+
+    grid-template-columns: 5fr 3fr;
+
+    column-gap: 5%;
 }
 
-#nosotros h2 {
-    margin: 5% auto 5% auto;
+.nos-h2 {
+    grid-area: nos-h2;
 }
+.p1 {
+    grid-area: p1;
+}
+.p2 {
+    grid-area: p2;
+}
+.p3 {
+    grid-area: p3;
+}
+.nos-img {
+    grid-area: nos-img;
+}
+
+/* Fin grids */
 
 #nosotros img {
     object-fit: cover;
-    width: 36%;
-    margin: 0 0 0 10%;
+    width: 100%;
+    max-height: 23em;
     border-radius: 3%;
     box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
@@ -287,9 +312,41 @@ a:hover {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .block {
-        display: block;
-        width: 100%;
+    #nosotros {
+        grid-template-areas: 
+        "nos-h2 nos-h2"
+        "p1 p1"
+        "p2 p2"
+        "p3 nos-img"
+        ;
+
+        grid-template-columns: 4fr 6fr;
+
+        column-gap: 5%;
+    }
+
+    .nos-img {
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 576px) {
+    #nosotros {
+        grid-template-areas: 
+        "nos-h2 nos-h2"
+        "p1 p1"
+        "p2 p2"
+        "p3 p3"
+        "nos-img nos-img"
+        ;
+
+        grid-template-columns: 4fr 6fr;
+
+        column-gap: 5%;
+    }
+
+    .nos-img {
+        margin-bottom: 4%;
     }
 }
 
@@ -311,7 +368,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     line-height: 1.7em;
-    text-align: justify;
+    text-align: start;
     margin-bottom: 2%;
 }
 
@@ -329,6 +386,25 @@ a:hover {
     margin: 0 4%;
 }
 
+@media (max-width: 768px) {
+    #otros {
+        margin-bottom: 5%;
+    }
+
+    #contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #otros {
+        margin: 0;
+    }
+
+    #otros ul {
+        margin-left: 6%;
+    }
+}
+
 
 /* ---------- Donaciones ---------- */
 
@@ -337,7 +413,7 @@ a:hover {
     flex-direction: column;
     margin: 3% 5%;
     line-height: 1.7em;
-    text-align: justify;
+    text-align: start;
 }
 
 #donaciones h2 {
@@ -351,6 +427,45 @@ a:hover {
     margin-bottom: 2%;
 }
 
+@media (min-width: 577px) and (max-width: 768px) {
+    #donaciones {
+        margin: 3% 10%;
+    }
+
+    #donaciones h2 {
+        margin-right: 10%;
+        text-align: start;
+    }
+
+    #objetos {
+        display: flex;
+    flex-direction: column;
+    }
+
+    .lista {
+        margin: 1% 0;
+    }    
+}
+
+@media (max-width: 576px) {
+    #donaciones {
+        margin: 3% 10%;
+    }
+
+    #donaciones h2 {
+        margin-right: 0;
+        text-align: start;
+    }
+
+    #objetos {
+        display: flex;
+    flex-direction: column;
+    }
+
+    .lista {
+        margin: 1% 0;
+    }    
+}
 
 /* ---------- Footer ---------- */
 
@@ -365,8 +480,7 @@ a:hover {
     -moz-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
 }
 
-#socials,
-#links {
+#socials, #links {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -381,14 +495,29 @@ a:hover {
 }
 
 #patitas {
-    display: flex;
-    align-items: center;
+    width: 10%;
 }
 
 #patitas img {
-    width: 40%;
+    width: 100%;
 }
 
 #links {
     text-align: right;
+}
+
+#socials, #links {
+    width: 20%;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    #patitas {
+        width: 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    #patitas {
+        width: 26%;
+    }
 }
