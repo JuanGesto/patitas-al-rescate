@@ -10,7 +10,10 @@ body {
     position: absolute;
 }
 
-h2, h3, p, ul{
+h2,
+h3,
+p,
+ul {
     font-family: 'Roboto', sans-serif;
     color: #2D2424;
 }
@@ -40,7 +43,7 @@ header {
     font-size: 0.8rem;
 }
 
-#logo-title img{
+#logo-title img {
     display: flex;
     width: 40%;
     max-width: 10em;
@@ -51,7 +54,7 @@ header {
     padding-left: 4%;
 }
 
-.navbar{
+.navbar {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     font-weight: 300;
@@ -74,6 +77,7 @@ header {
         background-color: #D5A37C;
         color: #000000;
     }
+
     100% {
         background-color: #D5A37C;
         color: #000000;
@@ -81,11 +85,14 @@ header {
 }
 
 
-.btn:hover, .btn:active {
+.btn:hover,
+.btn:active {
     background-color: #e0c09721;
 }
 
-.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus  {
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
     background-color: #e0c09721;
     color: black;
 }
@@ -95,7 +102,8 @@ header li {
     text-align: end;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
     color: #000000;
 }
@@ -111,7 +119,7 @@ a, a:hover {
     margin: 2% 10%;
 }
 
-#inicio p{
+#inicio p {
     display: flex;
     margin: 3% 7%;
     padding: 0 15% 0 0;
@@ -130,6 +138,24 @@ a, a:hover {
     -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
 }
 
+@media (max-width: 768px) {
+    #inicio {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 6%;
+        padding: 0;
+    }
+
+    #inicio img {
+        width: 50%;
+        margin-bottom: 6%;
+    }
+
+    #inicio p {
+        margin: 3% 5%;
+        padding: 0;
+    }
+}
 
 /* ---------- Adopta ---------- */
 
@@ -156,12 +182,14 @@ a, a:hover {
     margin: 0 0 2% 0;
 }
 
-#gato, #perro {
+#gato,
+#perro {
     width: 30%;
     margin: 0;
 }
 
-#gato img, #perro img {
+#gato img,
+#perro img {
     width: 100%;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -176,14 +204,62 @@ a, a:hover {
     text-align: justify;
 }
 
-#gato img:hover, #perro img:hover {
-transform: scale(1.1);
-transition: all 1s;
--webkit-transform: scale(1.1);
--moz-transform: scale(1.1);
--webkit-transition: all 1s;
--moz-transition: all 1s;
+#gato img:hover,
+#perro img:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
 }
+
+@media (min-width: 577px) and (max-width: 768px) {
+    #gato-perro {
+        flex-wrap: wrap;
+        margin: 3% 10%;
+    }
+
+    .text {
+        order: -1;
+        padding: 3% 0;
+        width: 100%;
+    }
+
+    #gato-perro h2 {
+        font-size: 1.5em;
+    }
+
+    #gato, #perro {
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    #gato-perro {
+        flex-direction: column;
+        align-items: center;
+        margin: 3% 10%;
+    }
+
+    .text {
+        order: -1;
+        padding: 3% 0;
+        width: 100%;
+    }
+
+    #gato-perro h2 {
+        font-size: 1.5em;
+    }
+
+    #gato, #perro {
+        width: 60%;
+        margin-bottom: 7%;
+    }
+}
+
+
+
 
 /* ---------- Nosotros ---------- */
 
@@ -208,6 +284,13 @@ transition: all 1s;
     box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .block {
+        display: block;
+        width: 100%;
+    }
 }
 
 /* ---------- Ayudar ---------- */
@@ -237,7 +320,8 @@ transition: all 1s;
     margin: 0 0 5%;
 }
 
-#mp ul, #banco ul {
+#mp ul,
+#banco ul {
     list-style: none;
 }
 
@@ -248,7 +332,7 @@ transition: all 1s;
 
 /* ---------- Donaciones ---------- */
 
-#donaciones{
+#donaciones {
     display: flex;
     flex-direction: column;
     margin: 3% 5%;
@@ -281,7 +365,8 @@ transition: all 1s;
     -moz-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
 }
 
-#socials, #links {
+#socials,
+#links {
     display: flex;
     justify-content: center;
     flex-direction: column;
