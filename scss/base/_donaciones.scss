@@ -1,0 +1,62 @@
+#donaciones {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 5%;
+    line-height: 1.7em;
+    text-align: start;
+
+    h2 {
+        margin-bottom: 2%;
+    }
+}
+
+#objetos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 2%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 577px) and (max-width: 768px) {
+    #donaciones {
+        margin: 3% 10%;
+    }
+
+    #donaciones h2 {
+        margin-right: 10%;
+        text-align: start;
+    }
+
+    #objetos {
+        display: flex;
+    flex-direction: column;
+    }
+
+    .lista {
+        margin: 1% 0;
+    }    
+}
+
+@media (max-width: 576px) {
+    #donaciones {
+        margin: 3% 10%;
+    }
+
+    #donaciones h2 {
+        margin-right: 0;
+        text-align: start;
+    }
+
+    #objetos {
+        display: flex;
+    flex-direction: column;
+    }
+
+    .lista {
+        margin: 1% 0;
+    }    
+}

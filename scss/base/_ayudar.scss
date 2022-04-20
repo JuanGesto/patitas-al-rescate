@@ -1,0 +1,60 @@
+#ayudar {
+    margin: 2% 10%;
+
+    h2 {
+        margin: auto auto 2%;
+    }
+
+    a {
+        background-color: #D5A37C;
+    }
+}
+
+#contenido {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.7em;
+    text-align: start;
+    margin-bottom: 2%;
+}
+
+#mp {
+    margin: 0 0 5%;
+
+    ul {
+        list-style: none;
+    }
+}
+
+#banco {
+    ul {
+        list-style: none;
+    }
+}
+
+#otros {
+    margin: 0 4%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #otros {
+        margin-bottom: 5%;
+    }
+
+    #contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #otros {
+        margin: 0;
+    }
+
+    #otros ul {
+        margin-left: 6%;
+    }
+}
