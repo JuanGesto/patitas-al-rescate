@@ -1,5 +1,7 @@
+$header-bgcolor: #D5A37C;
+
 header {
-    background-color: #D5A37C;
+    background-color: $header-bgcolor;
     display: flex;
     margin: 0;
     padding: 0 2% 0 2%;
@@ -32,24 +34,24 @@ header {
 }
 
 .dropdown-menu {
-    background-color: #D5A37C;
+    background-color: $header-bgcolor;
     box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
 }
 
 .btn {
-    background-color: #D5A37C;
+    background-color: $header-bgcolor;
     animation: changeColor 100s;
 
     @keyframes changeColor {
         0% {
-            background-color: #D5A37C;
+            background-color: $header-bgcolor;
             color: #000000;
         }
     
         100% {
-            background-color: #D5A37C;
+            background-color: $header-bgcolor;
             color: #000000;
         }
     }

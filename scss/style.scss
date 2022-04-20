@@ -1,33 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #E0C097;
-    margin: 0;
-    position: absolute;
-}
-
-h2, h3, p, ul {
-    font-family: 'Roboto', sans-serif;
-    color: #2D2424;
-}
-
-a, a:hover {
-    text-decoration: none;
-    color: #000000;
-}
-
-.borde {
-    border-bottom: 1px solid #2D2424;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                   Imports                                  */
-/* -------------------------------------------------------------------------- */
-
+@import 'base/body';
 @import 'base/header';
 @import 'base/inicio';
 @import 'base/adopta';
