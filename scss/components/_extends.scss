@@ -1,0 +1,13 @@
+@import 'mixins';
+
+%shadow-img {
+    @include shadow(20px 20px 20px -20px rgba(0, 0, 0, 0.75))
+}
+
+%shadow-header {
+    @include shadow(0px -7px 25px 10px rgba(0, 0, 0, 0.75))
+}
+
+%shadow-footer {
+    @include shadow(0px 7px 25px 10px rgba(0, 0, 0, 0.75))
+}

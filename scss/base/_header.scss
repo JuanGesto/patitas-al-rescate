@@ -1,17 +1,16 @@
-$header-bgcolor: #D5A37C;
+@import '../components/mapas';
+@import '../components/extends';
 
 header {
-    background-color: $header-bgcolor;
-    display: flex;
+    background-color: map-get($header-footer, bg-color);
+    display: map-get($header-footer, display);
+    justify-content: map-get($header-footer, justify-content);
+    align-items: map-get($header-footer, align-items);
     margin: 0;
     padding: 0 2% 0 2%;
-    justify-content: space-between;
-    align-items: center;
     max-height: 11em;
     flex-wrap: wrap;
-    box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+    @extend %shadow-header;
 
     li {
         font-size: 100%;
@@ -34,24 +33,24 @@ header {
 }
 
 .dropdown-menu {
-    background-color: $header-bgcolor;
+    background-color: #D5A37C;
     box-shadow: 20px 20px 25px 10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
 }
 
 .btn {
-    background-color: $header-bgcolor;
+    background-color: #D5A37C;
     animation: changeColor 100s;
 
     @keyframes changeColor {
         0% {
-            background-color: $header-bgcolor;
+            background-color: #D5A37C;
             color: #000000;
         }
     
         100% {
-            background-color: $header-bgcolor;
+            background-color: #D5A37C;
             color: #000000;
         }
     }

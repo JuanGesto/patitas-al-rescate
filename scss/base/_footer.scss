@@ -1,13 +1,15 @@
+@import '../components/mapas';
+@import '../components/extends';
+
 #footer {
     nav {
-        background-color: #D5A37C;
+        background-color: map-get($header-footer, bg-color);
+        display: map-get($header-footer, display);
+        justify-content: map-get($header-footer, justify-content);
+        align-items: map-get($header-footer, align-items);
         width: 100%;
         font-family: 'Poppins', sans-serif;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+        @extend %shadow-footer;
     }
 }
 

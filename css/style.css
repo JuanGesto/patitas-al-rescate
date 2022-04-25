@@ -24,18 +24,33 @@ a, a:hover {
   border-bottom: 1px solid #2D2424;
 }
 
+#nosotros img, .caja, #inicio img {
+  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
+#footer nav {
+  box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
 header {
   background-color: #D5A37C;
   display: flex;
-  margin: 0;
-  padding: 0 2% 0 2%;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0 2% 0 2%;
   max-height: 11em;
   flex-wrap: wrap;
-  box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
 }
 header li {
   font-size: 100%;
@@ -85,6 +100,24 @@ header li {
   color: black;
 }
 
+#nosotros img, .caja, #inicio img {
+  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
+#footer nav {
+  box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
 #inicio {
   display: flex;
   margin: 2% 10%;
@@ -102,9 +135,6 @@ header li {
   width: 21%;
   object-fit: cover;
   border-radius: 50% 2% 50% 2%;
-  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
 }
 
 @media (max-width: 768px) {
@@ -125,6 +155,24 @@ header li {
     padding: 0;
   }
 }
+#nosotros img, .caja, #inicio img {
+  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
+#footer nav {
+  box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
 #gato-perro {
   display: flex;
   padding: 1px;
@@ -142,9 +190,6 @@ header li {
   display: inline-block;
   overflow: hidden;
   border-radius: 3%;
-  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
 }
 
 #gato, #perro {
@@ -219,6 +264,24 @@ header li {
     margin-bottom: 7%;
   }
 }
+#nosotros img, #inicio img, .caja {
+  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
+#footer nav {
+  box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
 #nosotros {
   display: grid;
   margin: 2% 10%;
@@ -234,9 +297,6 @@ header li {
   width: 100%;
   max-height: 23em;
   border-radius: 3%;
-  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
 }
 
 .nos-h2 {
@@ -397,15 +457,31 @@ header li {
     margin: 1% 0;
   }
 }
+#inicio img, .caja, #nosotros img {
+  box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px -7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
 #footer nav {
-  background-color: #D5A37C;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: space-between;
   box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadows: 0px 7px 25px 10px rgba(0, 0, 0, 0.75);
+}
+
+#footer nav {
+  background-color: #D5A37C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 #socials {

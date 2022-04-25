@@ -1,3 +1,5 @@
+@import '../components/extends';
+
 #gato-perro {
     display: flex;
     padding: 1px;
@@ -16,9 +18,7 @@
     display: inline-block;
     overflow: hidden;
     border-radius: 3%;
-    box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+    @extend %shadow-img;
 }
 
 #gato, #perro {

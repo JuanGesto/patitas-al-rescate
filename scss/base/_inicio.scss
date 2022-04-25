@@ -1,3 +1,5 @@
+@import '../components/extends';
+
 #inicio {
     display: flex;
     margin: 2% 10%;
@@ -16,9 +18,7 @@
         width: 21%;
         object-fit: cover;
         border-radius: 50% 2% 50% 2%;
-        box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
-        -moz-box-shadows: 20px 20px 20px -20px rgba(0, 0, 0, 0.75);
+        @extend %shadow-img;
     }
 }
 
