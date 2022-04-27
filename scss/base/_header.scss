@@ -29,6 +29,7 @@ header {
         display: flex;
         width: 40%;
         max-width: 10em;
+        padding: 3%;
     }
 }
 
@@ -41,21 +42,8 @@ header {
 
 .btn {
     background-color: #D5A37C;
-    animation: changeColor 100s;
-
-    @keyframes changeColor {
-        0% {
-            background-color: #D5A37C;
-            color: #000000;
-        }
     
-        100% {
-            background-color: #D5A37C;
-            color: #000000;
-        }
-    }
-
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
         background-color: #e0c09721;
     }
 }

@@ -68,6 +68,7 @@ header li {
   display: flex;
   width: 40%;
   max-width: 10em;
+  padding: 3%;
 }
 
 .dropdown-menu {
@@ -79,19 +80,8 @@ header li {
 
 .btn {
   background-color: #D5A37C;
-  animation: changeColor 100s;
 }
-@keyframes changeColor {
-  0% {
-    background-color: #D5A37C;
-    color: #000000;
-  }
-  100% {
-    background-color: #D5A37C;
-    color: #000000;
-  }
-}
-.btn:hover, .btn:active {
+.btn:hover, .btn:active, .btn:focus {
   background-color: rgba(224, 192, 151, 0.1294117647);
 }
 
@@ -482,6 +472,7 @@ header {
   align-items: center;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  padding: 0.5% 0;
 }
 
 #socials {
@@ -491,7 +482,7 @@ header {
   margin: 0 2%;
   line-height: 2em;
   list-style: none;
-  width: 20%;
+  width: 30%;
 }
 #socials img {
   width: 1em;
@@ -506,14 +497,17 @@ header {
   line-height: 2em;
   list-style: none;
   text-align: right;
-  width: 20%;
+  width: 30%;
 }
 
 #patitas {
+  display: flex;
+  justify-content: center;
   width: 10%;
 }
 #patitas img {
-  width: 100%;
+  width: 75%;
+  padding: 2%;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -528,6 +522,9 @@ header {
   #patitas {
     width: 26%;
   }
+}
+.disclaimer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
