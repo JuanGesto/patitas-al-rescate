@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #E0C097;
     margin: 0;
@@ -22,4 +26,8 @@ a, a:hover {
 
 .borde {
     border-bottom: 1px solid #2D2424;
+}
+
+.disclaimer {
+    display: none;
 }
